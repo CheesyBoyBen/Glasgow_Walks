@@ -7,12 +7,20 @@ public class GPS_Location : MonoBehaviour
 {
     public float longitude;
     public float latitude;
+
+    public float testlongitude;
+    public float testlatitude;
+
     public float attitude;
     public Text gpsText;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        testlatitude = 55.829312f;
+        testlongitude = -4.071638f;
+
         Input.gyro.enabled = true;      // Enable the use of the phones Gyroscope
 
         // If the app has location services enabled
