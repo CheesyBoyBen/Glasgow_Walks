@@ -52,4 +52,9 @@ public class PlayerScript : MonoBehaviour
         transform.position = new Vector3((localXDist * playerXPercent) + topLeft.transform.position.x, transform.position.y, (localZDist * playerZPercent) + topLeft.transform.position.z);
     }
 
+
+    public void SwitchMovemntType()
+    {
+        Debug.Log("Hello");
+    }
 }
