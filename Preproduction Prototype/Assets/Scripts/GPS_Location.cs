@@ -5,14 +5,17 @@ using UnityEngine.UI;
 
 public class GPS_Location : MonoBehaviour
 {
-    public float longitude;
-    public float latitude;
+    private float longitude;
+    private float latitude;
 
+    
     public float testlongitude;
+
     public float testlatitude;
 
-    public float attitude;
-    public Text gpsText;
+    private float attitude;
+    [SerializeField]
+    private Text gpsText;
 
     // Start is called before the first frame update
     void Start()

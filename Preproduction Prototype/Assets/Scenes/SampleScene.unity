@@ -1375,11 +1375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e79b8b125f1034c8b7b507e6dfc32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  longitude: 0
-  latitude: 0
-  testlongitude: 0
-  testlatitude: 0
-  attitude: 0
+  testlongitude: 55.86771
+  testlatitude: 4.248789
   gpsText: {fileID: 1462756468}
 --- !u!1 &912645080
 GameObject:
@@ -1746,7 +1743,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284282430}
-  m_LocalRotation: {x: 0.43951973, y: 0.000000015455338, z: -0.000000007562543, w: 0.89823294}
+  m_LocalRotation: {x: 0.43951973, y: -0.000000015455338, z: 0.000000007562543, w: 0.89823294}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
