@@ -35,25 +35,21 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gpsXDist = topRight.longitude - topLeft.longitude;
-        gpsZDist = bottomLeft.latitude - topLeft.latitude;
+        gpsXDist = topRight.longitude - topLeft.longitude;      // Find the real world longitude distance between the top 2 markers
+        gpsZDist = bottomLeft.latitude - topLeft.latitude;      // Find the real world latitude distance between the left 2 markers
 
-        localXDist = topRight.transform.position.x - topLeft.transform.position.x;
-        localZDist = bottomLeft.transform.position.z - topLeft.transform.position.z;
+        localXDist = topRight.transform.position.x - topLeft.transform.position.x;      // Find the in game x distance between the top 2 markers
+        localZDist = bottomLeft.transform.position.z - topLeft.transform.position.z;    // Find the in game z distance between the left 2 markers
 
-        playerXDist = cvc.testlongitude - topLeft.longitude;
-        playerZDist = cvc.testlatitude - topLeft.latitude;
+        playerXDist = cvc.testlongitude - topLeft.longitude;    // Find the real world longitude distance between the top left marker and the player
+        playerZDist = cvc.testlatitude - topLeft.latitude;      // Find the real world latitude distance between the top left marker and the player
 
-        playerXPercent = playerXDist / gpsXDist;
-        playerZPercent = playerZDist / gpsZDist;
+        playerXPercent = playerXDist / gpsXDist;       // Find the percentage of the full longitude distance the player distance represents
+        playerZPercent = playerZDist / gpsZDist;       // Find the percentage of the full latitude distance the payer distance represents
 
 
-
+        // Set the players in game position to the equivalent position to their real world position
         transform.position = new Vector3((localXDist * playerXPercent) + topLeft.transform.position.x, transform.position.y, (localZDist * playerZPercent) + topLeft.transform.position.z);
     }
 
-    void FindClosestMarkers()
-    {
-
-    }
 }

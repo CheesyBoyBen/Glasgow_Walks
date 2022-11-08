@@ -18,8 +18,8 @@ public class GPS_Location : MonoBehaviour
     void Start()
     {
 
-        testlatitude = 55.829312f;
-        testlongitude = -4.071638f;
+        testlatitude = 55.867709f;
+        testlongitude = -4.248789f;
 
         Input.gyro.enabled = true;      // Enable the use of the phones Gyroscope
 
