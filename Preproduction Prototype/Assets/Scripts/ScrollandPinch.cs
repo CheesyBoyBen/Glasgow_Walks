@@ -55,7 +55,7 @@ public class ScrollandPinch : MonoBehaviour
 
                     // Ignore changes in the angle of over 300 degrees to account for the point where 360 goes to 0
                     if (((Angle - prevAngle) < 300) && ((Angle - prevAngle) > -300)) { cvc.m_XAxis.Value += (Angle - prevAngle) / 2; }      // Add half of the change in angle to the cinemachine camera X axis
-                                        
+                     ///test                   
                 }
 
                 // If the rotation type is gyroscopic
