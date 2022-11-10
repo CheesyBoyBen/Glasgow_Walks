@@ -1020,12 +1020,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8350853611488091217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b2c7ee9654e3f945b0f73149f3e4bbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ef197c9c2779654c82aa2124ac4b4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enterMessage: {fileID: 8350853610124012773}
-  monumentImage: {fileID: 8350853611133671682}
+  enterMessage: {fileID: 0}
+  monumentImage: {fileID: 0}
 --- !u!1 &8350853611617212159
 GameObject:
   m_ObjectHideFlags: 0

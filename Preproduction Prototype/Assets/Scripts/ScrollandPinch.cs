@@ -28,7 +28,13 @@ public class ScrollandPinch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (!rotType)
+        {
+            cvc.m_XAxis.Value = (Input.gyro.attitude.eulerAngles.z - 180) * -1;     // Set the value of the cinemachine camera X axis to the gyroscopic rotaion of the phones z axis converted to a range of 0 -> 360
+
+        }
+
         // Count number of touch inputs
         switch (Input.touchCount)
         {
@@ -61,7 +67,8 @@ public class ScrollandPinch : MonoBehaviour
                 // If the rotation type is gyroscopic
                 if (!rotType)
                 {
-                    cvc.m_XAxis.Value = (Input.gyro.attitude.eulerAngles.z - 180) * -1;     // Set the value of the cinemachine camera X axis to the gyroscopic rotaion of the phones z axis converted to a range of 0 -> 360
+                    //Debug.Log("Hello");
+                    //cvc.m_XAxis.Value = (Input.gyro.attitude.eulerAngles.z - 180) * -1;     // Set the value of the cinemachine camera X axis to the gyroscopic rotaion of the phones z axis converted to a range of 0 -> 360
 
                 }
 
