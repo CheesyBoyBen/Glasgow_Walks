@@ -42,10 +42,10 @@ public class Monuments : MonoBehaviour
             monumentImage.SetActive(true);
             monumentimage = true;
             enterMessage.SetActive(false);
-            player.GetComponent<CharacterController>().enabled = false;
+            //player.GetComponent<CharacterController>().enabled = false;
             if (firstInteract == true)
             {
-               // Gems.score += 5;
+              Gems.score += 5;
             }
         }
 
@@ -53,7 +53,7 @@ public class Monuments : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && monumentimage == true)
             {
                 monumentImage.SetActive(false);
-                player.GetComponent<CharacterController>().enabled = true;
+                //player.GetComponent<CharacterController>().enabled = true;
                 firstInteract = false;
         }
         
@@ -64,7 +64,7 @@ public class Monuments : MonoBehaviour
         if (monumentimage == true)
         {
             monumentImage.SetActive(false);
-            player.GetComponent<CharacterController>().enabled = true;
+            //player.GetComponent<CharacterController>().enabled = true;
             firstInteract = false;
         }
     }
