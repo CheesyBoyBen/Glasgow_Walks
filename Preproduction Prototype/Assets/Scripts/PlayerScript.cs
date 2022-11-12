@@ -35,6 +35,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         gpsXDist = topRight.longitude - topLeft.longitude;      // Find the real world longitude distance between the top 2 markers
         gpsZDist = bottomLeft.latitude - topLeft.latitude;      // Find the real world latitude distance between the left 2 markers
 
@@ -50,6 +51,8 @@ public class PlayerScript : MonoBehaviour
 
         // Set the players in game position to the equivalent position to their real world position
         transform.position = new Vector3((localXDist * playerXPercent) + topLeft.transform.position.x, transform.position.y, (localZDist * playerZPercent) + topLeft.transform.position.z);
+
+
     }
 
 
