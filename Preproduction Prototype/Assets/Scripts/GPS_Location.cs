@@ -19,9 +19,11 @@ public class GPS_Location : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //push test
+        
         testlatitude = 55.867709f;
         testlongitude = -4.248789f;
+
+
 
         Input.gyro.enabled = true;      // Enable the use of the phones Gyroscope
 

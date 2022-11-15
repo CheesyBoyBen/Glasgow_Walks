@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    [SerializeField]
+    public GPS_Location cvc;
 
+    [Header("Map Markers")]
     [SerializeField]
     public MarkerScript topLeft;
     [SerializeField]
@@ -13,8 +16,8 @@ public class PlayerScript : MonoBehaviour
     public MarkerScript bottomLeft;
     [SerializeField]
     public MarkerScript bottomRight;
-    [SerializeField]
-    public GPS_Location cvc;
+
+
 
     float gpsXDist;
     float gpsZDist;
@@ -47,6 +50,8 @@ public class PlayerScript : MonoBehaviour
 
         playerXPercent = playerXDist / gpsXDist;       // Find the percentage of the full longitude distance the player distance represents
         playerZPercent = playerZDist / gpsZDist;       // Find the percentage of the full latitude distance the payer distance represents
+
+        //Debug.Log(cvc.testlongitude);
 
 
         // Set the players in game position to the equivalent position to their real world position
