@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonumentEnterRadius : MonoBehaviour
 {
-    public static bool trigger;
+    public static bool trigger = false;
 
 
 

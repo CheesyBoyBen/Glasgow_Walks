@@ -29,6 +29,7 @@ public class Monuments : MonoBehaviour
             inRange = true;
             enterMessage.SetActive(true);
             entermessage = true;
+            Debug.Log("enter");
 
         }
         else
