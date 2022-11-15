@@ -14,12 +14,12 @@ public class HiddenMonument : MonoBehaviour
     private bool active = false;
     public static bool endRadius = false;
     private bool firstTime = true;
-    private bool InRange = false;
     [SerializeField]
     private GameObject enterRadius;
     private bool inRange;
     [SerializeField]
     private Camera cam;
+    public GameObject clueRadius;
 
 
 
@@ -51,6 +51,7 @@ public class HiddenMonument : MonoBehaviour
             if (Input.touchCount > 0)
             {
                 enterRadius.GetComponent<BoxCollider>().enabled = false;
+                clueRadius.GetComponent<SphereCollider>().enabled = false;
                 Debug.Log("touching");
                 Touch touch = Input.GetTouch(0);
                 Ray ray = cam.ScreenPointToRay(touch.position);

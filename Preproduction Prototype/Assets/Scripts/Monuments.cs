@@ -73,8 +73,10 @@ public class Monuments : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit))
                 {
+                    Debug.Log("hit");
                     if (hit.collider.gameObject.CompareTag("Monument"))
                     {
+                        Debug.Log("hit object");
                         monumentImage.SetActive(true);
                         monumentimage = true;
                         enterMessage.SetActive(false);
@@ -102,7 +104,7 @@ public class Monuments : MonoBehaviour
         if (monumentimage == true)
         {
             monumentImage.SetActive(false);
-            player.GetComponent<CharacterController>().enabled = true;
+            //player.GetComponent<CharacterController>().enabled = true;
             firstInteract = false;
         }
     }
