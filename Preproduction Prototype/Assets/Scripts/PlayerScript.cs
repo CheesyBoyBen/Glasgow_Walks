@@ -27,12 +27,14 @@ public class PlayerScript : MonoBehaviour
     float playerZDist;
     float playerXPercent;
     float playerZPercent;
+    bool test;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        test = true;
     }
 
     // Update is called once per frame
@@ -45,8 +47,19 @@ public class PlayerScript : MonoBehaviour
         localXDist = topRight.transform.position.x - topLeft.transform.position.x;      // Find the in game x distance between the top 2 markers
         localZDist = bottomLeft.transform.position.z - topLeft.transform.position.z;    // Find the in game z distance between the left 2 markers
 
-        playerXDist = cvc.testlongitude - topLeft.longitude;    // Find the real world longitude distance between the top left marker and the player
-        playerZDist = cvc.testlatitude - topLeft.latitude;      // Find the real world latitude distance between the top left marker and the player
+        if (test)
+        {
+
+            playerXDist = cvc.testlongitude - topLeft.longitude;    // Find the real world longitude distance between the top left marker and the player
+            playerZDist = cvc.testlatitude - topLeft.latitude;      // Find the real world latitude distance between the top left marker and the player
+
+        }
+
+        else if (!test)
+        {
+            playerXDist = cvc.longitude - topLeft.longitude;    // Find the real world longitude distance between the top left marker and the player
+            playerZDist = cvc.latitude - topLeft.latitude;      // Find the real world latitude distance between the top left marker and the player
+        }
 
         playerXPercent = playerXDist / gpsXDist;       // Find the percentage of the full longitude distance the player distance represents
         playerZPercent = playerZDist / gpsZDist;       // Find the percentage of the full latitude distance the payer distance represents
@@ -63,6 +76,7 @@ public class PlayerScript : MonoBehaviour
 
     public void SwitchMovemntType()
     {
-        Debug.Log("Hello");
+        if (test) { test = false; }
+        else if (!test) { test = true; }
     }
 }

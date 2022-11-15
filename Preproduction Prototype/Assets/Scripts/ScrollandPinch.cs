@@ -19,7 +19,7 @@ public class ScrollandPinch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rotType = false;    // Set initial rotation type to be gyroscopic
+        rotType = true;    // Set initial rotation type to be gyroscopic
 
         Input.gyro.enabled = true;      // Enable the use of the phones gyroscope
 

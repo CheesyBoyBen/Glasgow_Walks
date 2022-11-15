@@ -28,10 +28,10 @@ public class GPS_Location : MonoBehaviour
         Input.gyro.enabled = true;      // Enable the use of the phones Gyroscope
 
         // If the app has location services enabled
-        if (Input.location.isEnabledByUser)
-        {
+        //if (Input.location.isEnabledByUser)
+        
             StartCoroutine(GetLocation());      // Call the GetLocation function
-        }
+        
     }
 
     private IEnumerator GetLocation()
@@ -43,26 +43,26 @@ public class GPS_Location : MonoBehaviour
         {
             yield return new WaitForSeconds(0.5f);      // Wait for half a second
         }
-       // latitude = Input.location.lastData.latitude;    // Set the latitude float to the value of the phones GPS latitude
-        //longitude = Input.location.lastData.longitude;  // Set the longitude float to the value of the phones GPS longitude
+        latitude = Input.location.lastData.latitude;    // Set the latitude float to the value of the phones GPS latitude
+        longitude = Input.location.lastData.longitude;  // Set the longitude float to the value of the phones GPS longitude
         yield break;    // End the function
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.location.isEnabledByUser)
-        {
-           // latitude = Input.location.lastData.latitude;    // Set the latitude float to the value of the phones GPS latitude
-            //longitude = Input.location.lastData.longitude;  // Set the longitude float to the value of the phones GPS longitude
+        //if (Input.location.isEnabledByUser)
+        
+            latitude = Input.location.lastData.latitude;    // Set the latitude float to the value of the phones GPS latitude
+            longitude = Input.location.lastData.longitude;  // Set the longitude float to the value of the phones GPS longitude
             attitude = Input.gyro.attitude.eulerAngles.z;   // Set the attitude float to the value of the phones gyroscopic rotation around the x axis
             gpsText.text = "Lat: " + latitude + "\nLon: " + longitude + "\nAtt: " + attitude;       // Display the latitude, longitude and attitude floats
-        }
-        else
-        {
-            gpsText.text = "Lat: Not Found " + "\nLon: Not Found" + "\nAtt: Not Found";       // Display the latitude, longitude and attitude floats
+        
+        //else
+        
+            //gpsText.text = "Lat: Not Found " + "\nLon: Not Found" + "\nAtt: Not Found";       // Display the latitude, longitude and attitude floats
 
-        }
+        
     }
 
 }
