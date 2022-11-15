@@ -1851,6 +1851,34 @@ PrefabInstance:
       propertyPath: HMonumentImage
       value: 
       objectReference: {fileID: 1042437956}
+    - target: {fileID: 6559147464884953449, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147464923409919, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_text
+      value: A Welly
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147464923409919, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147464923409919, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465069640834, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_text
+      value: A Hat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465069640834, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465069640834, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 6559147465215017930, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1858,6 +1886,42 @@ PrefabInstance:
     - target: {fileID: 6559147465215017930, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465215017931, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.531431
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465215017931, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.645141
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465215017931, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465215017931, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -411
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465524760637, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_text
+      value: What famous item sits on the Duke of Wellingtons statues head
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465524760638, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0499
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465524760638, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465524760638, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147465723275552, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.32497
       objectReference: {fileID: 0}
     - target: {fileID: 6559147466026040032, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
       propertyPath: m_Name
@@ -1919,6 +1983,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6559147466047635849, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466047635849, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -265
+      objectReference: {fileID: 0}
     - target: {fileID: 6559147466094494354, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1927,6 +1999,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: WrongAnswer
       objectReference: {fileID: 0}
+    - target: {fileID: 6559147466094494355, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.531431
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466094494355, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.6451406
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466094494355, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466094494355, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 203
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466494244380, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_text
+      value: Traffic Cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466494244380, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466494244380, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 6559147466648816809, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1934,6 +2034,22 @@ PrefabInstance:
     - target: {fileID: 6559147466648816809, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CorrectAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466648816810, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.531431
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466648816810, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.645141
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466648816810, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559147466648816810, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -118
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1834825224767122114, guid: e52f15ec3c700864993cbbca1ab29d46, type: 3}
