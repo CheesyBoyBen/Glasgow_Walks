@@ -11,12 +11,12 @@ public class Monuments : MonoBehaviour
     public GameObject player;
     public GameObject enterMessage;
     public GameObject monumentImage;
-    public GameObject billboard;
-    public GameObject cube;
+    private GameObject billboard;
+    private GameObject cube;
     private bool entermessage = false;
     private bool monumentimage = false;
     private bool firstInteract = true;
-    private bool inRange = false;
+    private bool inRange = true;
     public GameObject enterRadius;
     [SerializeField]
     private Camera cam;
@@ -41,12 +41,16 @@ public class Monuments : MonoBehaviour
     void Start()
     {
         setPosition();
-        //setview();
+
+        billboard = transform.Find("Billboard").gameObject;
+        cube = transform.Find("Cube").gameObject;
+
+
     }
 
     private void FixedUpdate()
     {
-        if (MonumentEnterRadius.trigger == true)
+        /*if (MonumentEnterRadius.trigger == true)
         {
             inRange = true;
             enterMessage.SetActive(true);
@@ -56,7 +60,7 @@ public class Monuments : MonoBehaviour
         {
             enterMessage.SetActive(false);
             inRange = false;
-        }
+        }*/
 
 
         //if (facing == true && trigger == true || Input.GetKeyDown("e") && trigger == true)
@@ -83,6 +87,9 @@ public class Monuments : MonoBehaviour
                         //player.GetComponent<CharacterController>().enabled = false;
                         if (firstInteract == true)
                         {
+                            setview();
+                            firstInteract = false;
+
                             Gems.score += 5;
                         }
                     }
@@ -93,7 +100,7 @@ public class Monuments : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && monumentimage == true)
         {
             monumentImage.SetActive(false);
-            player.GetComponent<CharacterController>().enabled = true;
+            //player.GetComponent<CharacterController>().enabled = true;
             firstInteract = false;
         }
 
