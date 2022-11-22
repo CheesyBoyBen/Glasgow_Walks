@@ -17,6 +17,6 @@ public class Gems : MonoBehaviour
     {
         //makes the local score = to the global static score and displays it
         score2 = score;
-        scoreBox.GetComponent<TextMeshProUGUI>().text = "" + score2; 
+        scoreBox.GetComponent<Text>().text = "" + score2; 
     }
 }
