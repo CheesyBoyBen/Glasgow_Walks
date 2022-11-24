@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Minigame : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Minigame : MonoBehaviour
 
    public void CorrectAnswer()
     {
-        text.GetComponent<TextMeshProUGUI>().text = "Correct Answer";
+        text.GetComponent<Text>().text = "Correct Answer";
         Gems.score += 10;
         StartCoroutine(CloseDelay());
         gameComplete = true;
@@ -20,7 +21,7 @@ public class Minigame : MonoBehaviour
 
    public void WrongAnswer()
     {
-        text.GetComponent<TextMeshProUGUI>().text = "Wrong Answer Guess Again";
+        text.GetComponent<Text>().text = "Wrong Answer Guess Again";
     }
 
     IEnumerator CloseDelay()
