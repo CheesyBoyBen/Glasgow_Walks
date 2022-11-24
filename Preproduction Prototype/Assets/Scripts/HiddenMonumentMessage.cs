@@ -7,24 +7,25 @@ public class HiddenMonumentMessage : MonoBehaviour
 {
     public GameObject clueMessage;
 
-    //let the player know there is a hidden monument nearby if they enter the radius
+
+
     private void OnTriggerEnter(Collider other)
     {
-        clueMessage.SetActive(true);
+        clueMessage.SetActive(true);        //let the player know there is a hidden monument nearby if they enter the radius
     }
 
-    //deactivate when they leave the radius
+
     private void OnTriggerExit(Collider other)
     {
-        clueMessage.SetActive(false);
+        clueMessage.SetActive(false);       //deactivate when they leave the radius
     }
 
-    //if they open the monument deactivate the message
+
     private void Update()
     {
-        if (HiddenMonument.endRadius == true)
+        if (Minigame.gameComplete == true)
         {
-            clueMessage.SetActive(false);
+            Destroy(gameObject);        //if they completed the minigame permantly remove the clue message
         }
     }
 }

@@ -8,19 +8,23 @@ using UnityEditor;
 
 public class Monuments : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject enterMessage;
     public GameObject monumentImage;
+
+    [SerializeField]
+    private SphereCollider enterRadius;
     private GameObject billboard;
     private GameObject cube;
-    private bool entermessage = false;
-    private bool monumentimage = false;
+   
     private bool firstInteract = true;
-    private bool inRange = true;
-    public GameObject enterRadius;
+    private bool inrange = false;
+    private bool monumentimage = false;
+
     [SerializeField]
     private Camera cam;
 
+
+
+    
     [Header("Map Markers")]
     [SerializeField]
     public MarkerScript topLeft;
@@ -48,72 +52,47 @@ public class Monuments : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    private void OnTriggerEnter(Collider enterRadius)
     {
-        /*if (MonumentEnterRadius.trigger == true)
-        {
-            inRange = true;
-            enterMessage.SetActive(true);
-            entermessage = true;
-        }
-        else
-        {
-            enterMessage.SetActive(false);
-            inRange = false;
-        }*/
+        inrange = true;         // allows player to interact with monument
+    }
+    private void OnTriggerExit(Collider enterRadius)
+    {
+        inrange = false;
+    }
 
 
-        //if (facing == true && trigger == true || Input.GetKeyDown("e") && trigger == true)
-        if (inRange == true)
-        {
-            
 
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        if (inrange == true)
+        {
             if (Input.touchCount > 0)
             {
-                enterRadius.GetComponent<SphereCollider>().enabled = false;
-                Debug.Log("touching");
-                Touch touch = Input.GetTouch(0);
-                Ray ray = cam.ScreenPointToRay(touch.position);
+                enterRadius.enabled = false;        //disables collider blocking player form touching monument
+                Touch touch = Input.GetTouch(0);    //get instance of touch
+                Ray ray = cam.ScreenPointToRay(touch.position);     //get players touch screen position and project a ray
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit))
+                if (Physics.Raycast(ray, out hit))      //if player hits an object check it
                 {
-                    Debug.Log("hit");
-                    if (hit.collider.gameObject.CompareTag("Monument"))
-                    {
-                        Debug.Log("hit object");
+                    if (hit.collider.gameObject.CompareTag("Monument"))      //if it hits a monument with the "Monument" tag show monument image
                         monumentImage.SetActive(true);
-                        monumentimage = true;
-                        enterMessage.SetActive(false);
-                        //player.GetComponent<CharacterController>().enabled = false;
-                        if (firstInteract == true)
-                        {
-                            setview();
-                            firstInteract = false;
+                    //monumentimage = true;       
 
-                            Gems.score += 5;
-                        }
+                    if (firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
+                    {
+                        Gems.score += 5;
+                        firstInteract = false;
                     }
                 }
             }
-
         }
-        if (Input.GetKeyDown(KeyCode.F) && monumentimage == true)
-        {
-            monumentImage.SetActive(false);
-            //player.GetComponent<CharacterController>().enabled = true;
-            firstInteract = false;
-        }
-
-
     }
-    public void closeImage()
+
+    public void CloseImage()
     {
-        if (monumentimage == true)
-        {
-            monumentImage.SetActive(false);
-            //player.GetComponent<CharacterController>().enabled = true;
-            firstInteract = false;
-        }
+        monumentImage.SetActive(false);   //turn off the monument image if the player presses the button
     }
 
     private void setPosition()

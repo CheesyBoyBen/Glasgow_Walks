@@ -7,89 +7,70 @@ using UnityEngine.UI;
 
 public class HiddenMonument : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject HMonumentImage;
-    public GameObject miniGame;
-    public GameObject monumentRend;
-    private bool active = false;
-    public static bool endRadius = false;
-    private bool firstTime = true;
     [SerializeField]
-    private GameObject enterRadius;
-    private bool inRange;
+    private GameObject HMImage;
+    public GameObject miniGame;
+
+    [SerializeField]
+    private MeshRenderer monumentRend;
+    [SerializeField]
+    private BoxCollider enterRadius;
+
+    private bool imageActive = false;
+    private bool inRange = false;
+    private bool firstTime = true;
+
     [SerializeField]
     private Camera cam;
-    public GameObject clueRadius;
 
+
+
+    private void OnTriggerEnter(Collider enterRadius)
+    {
+        inRange = true;
+        monumentRend.enabled = true;        //reveal the monument if the player approaches it since its meant to be hidden
+    }
+
+    private void OnTriggerExit(Collider enterRadius)
+    {
+        inRange = false;
+        if (Minigame.gameComplete == true)      //if the player has already completed the minigame then keep the monument renderer active if they leave the area
+        {
+            monumentRend.enabled = true;
+        }
+        else
+        {
+            monumentRend.enabled = false;       //if they have not then hide the monument when they leave
+        }
+    }
 
 
     void Update()
     {
-
-        if (HmonTouch.trigger2 == true)
-        {
-            inRange = true;
-            monumentRend.GetComponent<MeshRenderer>().enabled = true;
-        }
-        else
-        {
-            inRange = false;
-            if (Minigame.gameComplete == true)
-            {
-                monumentRend.GetComponent<MeshRenderer>().enabled = true;
-            }
-            else
-            {
-                monumentRend.GetComponent<MeshRenderer>().enabled = false;
-            }
-        }
-
-
         if (inRange == true)
-        {
-
             if (Input.touchCount > 0)
             {
-                enterRadius.GetComponent<BoxCollider>().enabled = false;
-                clueRadius.GetComponent<SphereCollider>().enabled = false;
-                Debug.Log("touching");
-                Touch touch = Input.GetTouch(0);
-                Ray ray = cam.ScreenPointToRay(touch.position);
+                Touch touch = Input.GetTouch(0);        //get instance of touch
+                Ray ray = cam.ScreenPointToRay(touch.position);     //get the touch position on the screen and project a ray
                 RaycastHit hit;
-                if (Physics.Raycast(ray, out hit))
+                if (Physics.Raycast(ray, out hit))      //check if it hits a gameobject
                 {
-                    Debug.Log("hit");
-                    if (hit.collider.gameObject.CompareTag("HMonument"))
+                    if (hit.collider.gameObject.CompareTag("HMonument"))     //if the gameobject has a "HMonument" tag then show the monument image
                     {
-                        Debug.Log("hitobject");
-                        HMonumentImage.SetActive(true);
-                        active = true;
-                        // player.GetComponent<CharacterController>().enabled = false;
-                        if (firstTime == true)
+                        HMImage.SetActive(true);
+                        //imageActive = true;
+                        if (firstTime == true)       //if its the players first time then start the minigame and set firsttime to false so they can interact with the monument without activting the minigame
                         {
                             miniGame.SetActive(true);
+                            firstTime = false;
                         }
                     }
                 }
             }
-
-        }
-        if (Input.GetKeyUp(KeyCode.F) && active == true && inRange == true && Minigame.gameComplete == true)
-        {
-            HMonumentImage.SetActive(false);
-            player.GetComponent<CharacterController>().enabled = true;
-            firstTime = false;
-        }
-
     }
 
-    public void closeImage()
+    public void CloseImage()
     {
-        if (HMonumentImage == true)
-        {
-            HMonumentImage.SetActive(false);
-            player.GetComponent<CharacterController>().enabled = true;
-            firstTime = false;
-        }
+        HMImage.SetActive(false);      //close the image if they press the close button
     }
 }
