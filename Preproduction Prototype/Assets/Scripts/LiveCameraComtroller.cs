@@ -11,10 +11,7 @@ public class LiveCameraComtroller : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        Debug.Log ("Script has been started");
-        plane = GameObject.FindWithTag ("LiveCam");
-
-                
+        plane = GameObject.FindWithTag ("LiveCam");                
 
         var webCamDevices = WebCamTexture.devices;
         foreach (var camDevice in webCamDevices)
@@ -31,6 +28,7 @@ public class LiveCameraComtroller : MonoBehaviour
         plane.GetComponent<Renderer>().material.mainTexture = mCamera;
         mCamera.Play ();
 
+        plane.SetActive(false);
     }
 
     // Update is called once per frame
