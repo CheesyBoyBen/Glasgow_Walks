@@ -12,7 +12,7 @@ public class HiddenMonument : MonoBehaviour
     public GameObject miniGame;
 
     [SerializeField]
-    private MeshRenderer monumentRend;
+    private GameObject monumentRend;
     [SerializeField]
     private BoxCollider enterRadius;
 
@@ -28,7 +28,7 @@ public class HiddenMonument : MonoBehaviour
     private void OnTriggerEnter(Collider enterRadius)
     {
         inRange = true;
-        monumentRend.enabled = true;        //reveal the monument if the player approaches it since its meant to be hidden
+        monumentRend.SetActive(true);        //reveal the monument if the player approaches it since its meant to be hidden
     }
 
     private void OnTriggerExit(Collider enterRadius)
@@ -36,11 +36,11 @@ public class HiddenMonument : MonoBehaviour
         inRange = false;
         if (Minigame.gameComplete == true)      //if the player has already completed the minigame then keep the monument renderer active if they leave the area
         {
-            monumentRend.enabled = true;
+            monumentRend.SetActive(true);
         }
         else
         {
-            monumentRend.enabled = false;       //if they have not then hide the monument when they leave
+            monumentRend.SetActive(false);       //if they have not then hide the monument when they leave
         }
     }
 
