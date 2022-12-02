@@ -1025,8 +1025,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef197c9c2779654c82aa2124ac4b4f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monumentImage: {fileID: 8350853611133671682}
-  enterRadius: {fileID: 8350853611488091218}
+  monumentImage: {fileID: 0}
+  enterRadius: {fileID: 0}
+  firstInteract: 1
   cam: {fileID: 0}
   topLeft: {fileID: 0}
   topRight: {fileID: 0}

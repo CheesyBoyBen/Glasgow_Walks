@@ -14,7 +14,8 @@ public class Monuments : MonoBehaviour
     private SphereCollider enterRadius;
     private GameObject billboard;
     private GameObject cube;
-   
+    [SerializeField]
+  //  private GameObject[] Monumentslist;
     private bool firstInteract = true;
     private bool inrange = false;
     private bool monumentimage = false;
@@ -48,8 +49,6 @@ public class Monuments : MonoBehaviour
 
         billboard = transform.Find("Billboard").gameObject;
         cube = transform.Find("Cube").gameObject;
-
-
     }
 
     private void OnTriggerEnter(Collider enterRadius)
@@ -66,18 +65,20 @@ public class Monuments : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (inrange == true)
+        //if (inrange == true)
+        //{
+        if (Input.touchCount > 0)
         {
-            if (Input.touchCount > 0)
+            enterRadius.enabled = false;        //disables collider blocking player form touching monument
+            Touch touch = Input.GetTouch(0);    //get instance of touch
+            Ray ray = cam.ScreenPointToRay(touch.position);     //get players touch screen position and project a ray
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))      //if player hits an object check it
             {
-                enterRadius.enabled = false;        //disables collider blocking player form touching monument
-                Touch touch = Input.GetTouch(0);    //get instance of touch
-                Ray ray = cam.ScreenPointToRay(touch.position);     //get players touch screen position and project a ray
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit))      //if player hits an object check it
+                if (hit.collider.gameObject.CompareTag("Monument"))      //if it hits a monument with the "Monument" tag show monument image
                 {
-                    if (hit.collider.gameObject.CompareTag("Monument"))      //if it hits a monument with the "Monument" tag show monument image
-                        monumentImage.SetActive(true);
+                   GameObject curMonumentImage = hit.collider.gameObject.GetComponent<Monuments>().monumentImage;
+                   curMonumentImage.SetActive(true);
                     //monumentimage = true;       
 
                     if (firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
@@ -85,7 +86,8 @@ public class Monuments : MonoBehaviour
                         Gems.score += 5;
                         firstInteract = false;
                     }
-                }
+                //}
+            }
             }
         }
     }
