@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class LiveCameraComtroller : MonoBehaviour
 {
@@ -39,13 +40,21 @@ public class LiveCameraComtroller : MonoBehaviour
 
     public void SetActive()
     {
+
         if (plane.activeSelf)
         {
             plane.SetActive(false);
+            SavePic();
+
         }
         else
         {
             plane.SetActive(true);
         }
+    }
+
+    void SavePic()
+    {
+        AssetDatabase.CreateAsset(mCamera, "Assets/SavedPics/Pic.png");
     }
 }

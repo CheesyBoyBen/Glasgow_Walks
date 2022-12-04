@@ -35,6 +35,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         test = true;
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
     // Update is called once per frame
