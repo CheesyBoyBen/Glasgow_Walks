@@ -224,7 +224,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1649,7 +1649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HMImage: {fileID: 0}
   miniGame: {fileID: 6559147464884953449}
-  monumentRend: {fileID: 7740844779084147311}
+  monumentRend: {fileID: 4322863587761786444}
   enterRadius: {fileID: 6559147466026040058}
   cam: {fileID: 0}
 --- !u!1 &6559147466047635850
@@ -2005,7 +2005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d7d16f546104f449c93044f04dc6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueMessage: {fileID: 0}
+  clueMessage: {fileID: 6559147466664806438}
 --- !u!1 &6559147466648816811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,8 +2394,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66e1e87c0b6373e4aa2620ef9215b42b, type: 3}
   m_PrefabInstance: {fileID: 3980210473647616797}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &7740844779084147311 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -2571118854743697038, guid: 66e1e87c0b6373e4aa2620ef9215b42b, type: 3}
+--- !u!1 &4322863587761786444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 66e1e87c0b6373e4aa2620ef9215b42b, type: 3}
   m_PrefabInstance: {fileID: 3980210473647616797}
   m_PrefabAsset: {fileID: 0}
