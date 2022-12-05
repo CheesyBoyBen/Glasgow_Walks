@@ -37,7 +37,7 @@ public class HiddenMonument : MonoBehaviour
         monumentRend.SetActive(true);        //reveal the monument if the player approaches it since its meant to be hidden
         messageRadius.SetActive(false);
     }
-
+    
     private void OnTriggerExit(Collider collider)
     {
         inRange = false;
