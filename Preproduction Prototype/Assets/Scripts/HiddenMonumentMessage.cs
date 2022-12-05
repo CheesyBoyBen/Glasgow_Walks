@@ -8,10 +8,9 @@ public class HiddenMonumentMessage : MonoBehaviour
     public GameObject clueMessage;
 
 
-
     private void OnTriggerEnter(Collider other)
     {
-        clueMessage.SetActive(true);        //let the player know there is a hidden monument nearby if they enter the radius
+          clueMessage.SetActive(true);
     }
 
 
