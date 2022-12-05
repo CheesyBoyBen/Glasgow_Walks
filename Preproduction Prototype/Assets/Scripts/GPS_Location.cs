@@ -20,8 +20,8 @@ public class GPS_Location : MonoBehaviour
     void Start()
     {
         
-        testlatitude = 55.867709f;
-        testlongitude = -4.248789f;
+        testlatitude = 55.866854f;
+        testlongitude = -4.250521f;
 
 
 

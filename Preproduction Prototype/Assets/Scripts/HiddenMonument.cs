@@ -55,7 +55,7 @@ public class HiddenMonument : MonoBehaviour
 
     void Update()
     {
-       Gem.transform.Rotate(0, 0.8f, 0, Space.World);
+       Gem.transform.Rotate(0, 0.2f, 0, Space.World);
         if (inRange == true)
             if (Input.touchCount > 0)
             {

@@ -14,6 +14,8 @@ public class Monuments : MonoBehaviour
     private SphereCollider enterRadius;
     private GameObject billboard;
     private GameObject cube;
+    public GameObject liveCam;
+
     [SerializeField]
   //  private GameObject[] Monumentslist;
     private bool firstInteract = true;
@@ -77,14 +79,20 @@ public class Monuments : MonoBehaviour
             {
                 if (hit.collider.gameObject.CompareTag("Monument"))      //if it hits a monument with the "Monument" tag show monument image
                 {
-                   GameObject curMonumentImage = hit.collider.gameObject.GetComponent<Monuments>().monumentImage;
-                   curMonumentImage.SetActive(true);
-                    //monumentimage = true;       
+                    GameObject curMonumentImage = hit.collider.gameObject.GetComponent<Monuments>().monumentImage;
+                    curMonumentImage.SetActive(true);
+
+                    billboard = hit.collider.gameObject.GetComponent<Monuments>().billboard;
+                    cube = hit.collider.gameObject.GetComponent<Monuments>().cube;
+
+                    setview();
+
 
                     if (firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
                     {
                         Gems.score += 5;
                         firstInteract = false;
+                        //setview();
                     }
                 //}
             }
@@ -95,6 +103,8 @@ public class Monuments : MonoBehaviour
     public void CloseImage()
     {
         monumentImage.SetActive(false);   //turn off the monument image if the player presses the button
+
+        liveCam.gameObject.GetComponent<LiveCameraComtroller>().SetActive();
     }
 
     private void setPosition()
@@ -132,12 +142,10 @@ public class Monuments : MonoBehaviour
         {
             cube.SetActive(false);
             billboard.SetActive(true);
+            Debug.Log("Hello");
         }
-        else
-        {
-            cube.SetActive(true);
-            billboard.SetActive(false);
-        }
+
+        
     }
 }
 
