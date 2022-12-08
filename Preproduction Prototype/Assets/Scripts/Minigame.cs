@@ -13,7 +13,6 @@ public class Minigame : MonoBehaviour
 
    public void CorrectAnswer()
     {
-        Debug.Log("correct");
         text.GetComponent<Text>().text = "Correct Answer";
         Gems.score += 10;
         StartCoroutine(CloseDelay());

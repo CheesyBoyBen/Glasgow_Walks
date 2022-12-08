@@ -17,7 +17,7 @@ public class Monuments : MonoBehaviour
     public GameObject liveCam;
 
     [SerializeField]
-  //  private GameObject[] Monumentslist;
+    private GameObject miniGame;
     private bool firstInteract = true;
     private bool inrange = false;
     private bool monumentimage = false;
@@ -90,7 +90,7 @@ public class Monuments : MonoBehaviour
 
                     if (firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
                     {
-                        Gems.score += 5;
+                        miniGame.SetActive(true);
                         firstInteract = false;
                         //setview();
                     }
