@@ -82,17 +82,23 @@ public class Monuments : MonoBehaviour
                     GameObject curMonumentImage = hit.collider.gameObject.GetComponent<Monuments>().monumentImage;
                     curMonumentImage.SetActive(true);
 
-                    billboard = hit.collider.gameObject.GetComponent<Monuments>().billboard;
-                    cube = hit.collider.gameObject.GetComponent<Monuments>().cube;
+                    //billboard = hit.collider.gameObject.GetComponent<Monuments>().billboard;
+                    //cube = hit.collider.gameObject.GetComponent<Monuments>().cube;
 
-                    setview();
+                    //setview();
+
+                    if (hit.collider.gameObject.GetComponent<Monuments>().cube.activeSelf)
+                    {
+                        hit.collider.gameObject.GetComponent<Monuments>().cube.SetActive(false);
+                        hit.collider.gameObject.GetComponent<Monuments>().billboard.SetActive(true);
+                        Debug.Log("Hello");
+                    }
 
 
                     if (firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
                     {
                         miniGame.SetActive(true);
                         firstInteract = false;
-                        //setview();
                     }
                 //}
             }

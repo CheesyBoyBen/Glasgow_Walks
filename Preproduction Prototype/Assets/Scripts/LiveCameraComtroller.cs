@@ -8,7 +8,10 @@ public class LiveCameraComtroller : MonoBehaviour
         public WebCamTexture mCamera = null;
         public GameObject plane;
         public GameObject cvc;
-        string frontCamName = null;
+        public GameObject button;
+        public GameObject test;
+
+    string frontCamName = null;
 
     // Use this for initialization
     void Start ()
@@ -45,13 +48,15 @@ public class LiveCameraComtroller : MonoBehaviour
         if (plane.activeSelf)
         {
             plane.SetActive(false);
+            button.SetActive(false);
             SavePic();
             cvc.gameObject.GetComponent<ScrollandPinch>().MoveZoom();
-
+            
         }
         else
         {
             plane.SetActive(true);
+            button.SetActive(true);
             cvc.gameObject.GetComponent<ScrollandPinch>().MoveZoom();
         }
     }
@@ -59,5 +64,8 @@ public class LiveCameraComtroller : MonoBehaviour
     void SavePic()
     {
         //AssetDatabase.CreateAsset(mCamera, "Assets/SavedPics/Pic.png");
+
+        test.GetComponent<Renderer>().material.mainTexture = plane.GetComponent<Renderer>().material.mainTexture;
+
     }
 }
