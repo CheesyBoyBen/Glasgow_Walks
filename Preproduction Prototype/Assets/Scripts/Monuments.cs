@@ -15,6 +15,7 @@ public class Monuments : MonoBehaviour
     private GameObject billboard;
     private GameObject cube;
     public GameObject liveCam;
+    public GameObject plane;
 
     [SerializeField]
     private GameObject miniGame;
@@ -91,6 +92,8 @@ public class Monuments : MonoBehaviour
                     {
                         hit.collider.gameObject.GetComponent<Monuments>().cube.SetActive(false);
                         hit.collider.gameObject.GetComponent<Monuments>().billboard.SetActive(true);
+                        liveCam.gameObject.GetComponent<LiveCameraComtroller>().monumentPlane = hit.collider.gameObject.GetComponent<Monuments>().plane;
+                         
                         Debug.Log("Hello");
                     }
 

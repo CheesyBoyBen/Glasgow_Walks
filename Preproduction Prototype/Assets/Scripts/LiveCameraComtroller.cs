@@ -9,7 +9,7 @@ public class LiveCameraComtroller : MonoBehaviour
         public GameObject plane;
         public GameObject cvc;
         public GameObject button;
-        public GameObject test;
+        public GameObject monumentPlane;
 
     string frontCamName = null;
 
@@ -65,7 +65,7 @@ public class LiveCameraComtroller : MonoBehaviour
     {
         //AssetDatabase.CreateAsset(mCamera, "Assets/SavedPics/Pic.png");
 
-        test.GetComponent<Renderer>().material.mainTexture = plane.GetComponent<Renderer>().material.mainTexture;
+        monumentPlane.GetComponent<Renderer>().material.mainTexture = plane.GetComponent<Renderer>().material.mainTexture;
 
     }
 }
