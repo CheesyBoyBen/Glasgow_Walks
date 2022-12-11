@@ -1000,12 +1000,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monument (Bird Mural)
       objectReference: {fileID: 0}
+    - target: {fileID: 8350853611617212153, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 165448368}
+    - target: {fileID: 8350853611617212153, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseImage
+      objectReference: {fileID: 0}
     - target: {fileID: 9165085681436114572, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+--- !u!114 &165448368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+  m_PrefabInstance: {fileID: 165448367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ef197c9c2779654c82aa2124ac4b4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &223318287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1624,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263425819}
-  m_LocalRotation: {x: 0.45574266, y: -0.000000021659526, z: 0.00000001108981, w: 0.8901116}
+  m_LocalRotation: {x: 0.45574266, y: 0.000000021659526, z: -0.00000001108981, w: 0.8901116}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6558,7 +6577,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.45574272, y: -0.000000034246717, z: 0.000000017534534, w: 0.89011157}
+  m_LocalRotation: {x: 0.45574272, y: 0.000000034246717, z: -0.000000017534534, w: 0.89011157}
   m_LocalPosition: {x: 0, y: 15.991, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6869,6 +6888,10 @@ PrefabInstance:
     - target: {fileID: 8350853611488091217, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Name
       value: Monument (The Cenotaph)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350853611617212153, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseImage
       objectReference: {fileID: 0}
     - target: {fileID: 9165085681436114572, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_RootOrder
@@ -7895,7 +7918,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233787081}
-  m_LocalRotation: {x: 0.47185794, y: -0.000000021454222, z: 0.0000000114819505, w: 0.88167465}
+  m_LocalRotation: {x: 0.47185794, y: 0.000000021454227, z: -0.000000011481954, w: 0.88167465}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10820,12 +10843,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monument (Cradle Mural)
       objectReference: {fileID: 0}
+    - target: {fileID: 8350853611617212153, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1742541371}
+    - target: {fileID: 8350853611617212153, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseImage
+      objectReference: {fileID: 0}
     - target: {fileID: 9165085681436114572, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+--- !u!114 &1742541371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+  m_PrefabInstance: {fileID: 1742541370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ef197c9c2779654c82aa2124ac4b4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1765845907
 GameObject:
   m_ObjectHideFlags: 0
