@@ -78,7 +78,12 @@ public class Monuments : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))      //if player hits an object check it
             {
-                if (hit.collider.gameObject.CompareTag("Monument"))      //if it hits a monument with the "Monument" tag show monument image
+                if (hit.collider.gameObject.CompareTag("Block Ray"))
+                {
+
+                }            
+
+                else if (hit.collider.gameObject.CompareTag("Monument"))      //if it hits a monument with the "Monument" tag show monument image
                 {
                     GameObject curMonumentImage = hit.collider.gameObject.GetComponent<Monuments>().monumentImage;
                     curMonumentImage.SetActive(true);

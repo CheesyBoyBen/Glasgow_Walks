@@ -63,8 +63,13 @@ public class HiddenMonument : MonoBehaviour
                 Ray ray = cam.ScreenPointToRay(touch.position);     //get the touch position on the screen and project a ray
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit))      //check if it hits a gameobject
-                {          
-                    if (hit.collider.gameObject.CompareTag("HMonument"))     //if the gameobject has a "HMonument" tag then show the monument image
+                {
+                    if(hit.collider.gameObject.CompareTag("Block Ray"))
+                    {
+
+                    }
+
+                    else if (hit.collider.gameObject.CompareTag("HMonument"))     //if the gameobject has a "HMonument" tag then show the monument image
                     {
                         GameObject curHMonument = hit.collider.gameObject.GetComponent<HiddenMonument>().HMImage;
                         curHMonument.SetActive(true);
