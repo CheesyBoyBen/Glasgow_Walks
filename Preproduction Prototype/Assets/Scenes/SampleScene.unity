@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.50204134, g: 0.6007415, b: 0.7463233, a: 1}
+  m_IndirectSpecularColor: {r: 0.50438464, g: 0.60261714, b: 0.7478664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1041,6 +1041,10 @@ PrefabInstance:
       propertyPath: monumentImage
       value: 
       objectReference: {fileID: 1019604662}
+    - target: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: miniGameManager
+      value: 
+      objectReference: {fileID: 881883988}
     - target: {fileID: 8350853611488091217, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Name
       value: Monument (Bird Mural)
@@ -7204,6 +7208,10 @@ PrefabInstance:
       propertyPath: monumentImage
       value: 
       objectReference: {fileID: 830334412}
+    - target: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: miniGameManager
+      value: 
+      objectReference: {fileID: 881883988}
     - target: {fileID: 8350853611488091217, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Name
       value: Monument (The Cenotaph)
@@ -9071,6 +9079,10 @@ PrefabInstance:
       propertyPath: monumentImage
       value: 
       objectReference: {fileID: 318706723}
+    - target: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: miniGameManager
+      value: 
+      objectReference: {fileID: 881883988}
     - target: {fileID: 8350853611488091217, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Name
       value: Monument (Clock Tower)
@@ -9889,6 +9901,10 @@ PrefabInstance:
       propertyPath: monumentImage
       value: 
       objectReference: {fileID: 338384744}
+    - target: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: miniGameManager
+      value: 
+      objectReference: {fileID: 881883988}
     - target: {fileID: 8350853611488091217, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Name
       value: Monument (Wellington)
@@ -11286,6 +11302,10 @@ PrefabInstance:
       propertyPath: monumentImage
       value: 
       objectReference: {fileID: 809940565}
+    - target: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: miniGameManager
+      value: 
+      objectReference: {fileID: 881883988}
     - target: {fileID: 8350853611488091217, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Name
       value: Monument (Cradle Mural)
@@ -12204,6 +12224,10 @@ PrefabInstance:
       propertyPath: monumentImage
       value: 
       objectReference: {fileID: 1059007892}
+    - target: {fileID: 8350853611488091215, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: miniGameManager
+      value: 
+      objectReference: {fileID: 881883988}
     - target: {fileID: 8350853611488091217, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Name
       value: Monument (George Square)

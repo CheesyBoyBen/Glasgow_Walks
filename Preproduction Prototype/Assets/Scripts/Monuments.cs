@@ -19,6 +19,7 @@ public class Monuments : MonoBehaviour
 
     [SerializeField]
     private GameObject miniGame;
+    public GameObject miniGameManager;
     private bool firstInteract = true;
     private bool inrange = false;
     private bool monumentimage = false;
@@ -98,13 +99,16 @@ public class Monuments : MonoBehaviour
                         hit.collider.gameObject.GetComponent<Monuments>().cube.SetActive(false);
                         hit.collider.gameObject.GetComponent<Monuments>().billboard.SetActive(true);
                         liveCam.gameObject.GetComponent<LiveCameraComtroller>().monumentPlane = hit.collider.gameObject.GetComponent<Monuments>().plane;
-                         
-                        Debug.Log("Hello");
+                        
+
                     }
 
 
                     if (firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
                     {
+                        
+                        miniGame = hit.collider.gameObject.GetComponent<Monuments>().miniGame;
+                        miniGameManager.gameObject.GetComponent<Minigame>().SetGame(miniGame);
                         miniGame.SetActive(true);
                         firstInteract = false;
                     }

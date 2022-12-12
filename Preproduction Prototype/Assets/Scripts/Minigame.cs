@@ -28,6 +28,12 @@ public class Minigame : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         game.SetActive(false);
+        Debug.Log("Game Closed");
+    }
 
+    public void SetGame(GameObject newGame)
+    {
+        game = newGame;
+        Debug.Log("Game Set");
     }
 }
