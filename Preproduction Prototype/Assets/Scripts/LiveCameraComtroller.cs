@@ -65,7 +65,15 @@ public class LiveCameraComtroller : MonoBehaviour
     {
         //AssetDatabase.CreateAsset(mCamera, "Assets/SavedPics/Pic.png");
 
-        monumentPlane.GetComponent<Renderer>().material.mainTexture = plane.GetComponent<Renderer>().material.mainTexture;
+        Texture2D snap = new Texture2D(mCamera.width, mCamera.height);
+        snap.SetPixels(mCamera.GetPixels());
+        snap.Apply();
+
+
+
+        monumentPlane.GetComponent<Renderer>().material.mainTexture = snap;
+        //monumentPlane.GetComponent<Renderer>().material.mainTexture = plane.GetComponent<Renderer>().material.mainTexture;
+
 
     }
 }

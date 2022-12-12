@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.50204134, g: 0.6007415, b: 0.7463233, a: 1}
+  m_IndirectSpecularColor: {r: 0.50438464, g: 0.60261714, b: 0.7478664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1095,10 +1095,6 @@ PrefabInstance:
       propertyPath: m_Text
       value: ST MUNGO BIRD MURAL
       objectReference: {fileID: 0}
-    - target: {fileID: 1783344169063670525, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7438832747472323933, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1130,26 +1126,6 @@ PrefabInstance:
     - target: {fileID: 8350853610439396045, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9aab652217eef85418af21b42fe37336, type: 3}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.b
-      value: 0.20392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.g
-      value: 0.6745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.r
-      value: 0.91764706
       objectReference: {fileID: 0}
     - target: {fileID: 8350853611133671682, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
@@ -1291,14 +1267,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseImage
       objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 066916b796c826148950032c9f1222b8, type: 3}
     - target: {fileID: 9165085681436114572, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7530,9 +7498,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: THE CENOTAPH
       objectReference: {fileID: 0}
-    - target: {fileID: 1783344169063670525, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Text
-      value: 
+    - target: {fileID: 7438832747472323933, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8350853609830248652, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_LocalScale.x
@@ -7557,26 +7525,6 @@ PrefabInstance:
     - target: {fileID: 8350853610439396045, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9aab652217eef85418af21b42fe37336, type: 3}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.b
-      value: 0.20392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.g
-      value: 0.6745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.r
-      value: 0.91764706
       objectReference: {fileID: 0}
     - target: {fileID: 8350853611133671682, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
@@ -7722,14 +7670,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseImage
       objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 066916b796c826148950032c9f1222b8, type: 3}
     - target: {fileID: 9165085681436114572, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10453,10 +10393,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1783344169063670525, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7438832747472323933, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -10480,26 +10416,6 @@ PrefabInstance:
     - target: {fileID: 8350853610439396045, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9aab652217eef85418af21b42fe37336, type: 3}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.b
-      value: 0.20392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.g
-      value: 0.6745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.r
-      value: 0.91764706
       objectReference: {fileID: 0}
     - target: {fileID: 8350853611133671682, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
@@ -10641,14 +10557,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseImage
       objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 066916b796c826148950032c9f1222b8, type: 3}
     - target: {fileID: 9165085681436114572, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11979,9 +11887,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: ST MUNGO CRADLE MURAL
       objectReference: {fileID: 0}
-    - target: {fileID: 1783344169063670525, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Text
-      value: 
+    - target: {fileID: 7438832747472323933, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8350853609830248652, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_LocalScale.x
@@ -12006,26 +11914,6 @@ PrefabInstance:
     - target: {fileID: 8350853610439396045, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9aab652217eef85418af21b42fe37336, type: 3}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.b
-      value: 0.20392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.g
-      value: 0.6745098
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Color.r
-      value: 0.91764706
       objectReference: {fileID: 0}
     - target: {fileID: 8350853611133671682, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
@@ -12175,14 +12063,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseImage
       objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 066916b796c826148950032c9f1222b8, type: 3}
     - target: {fileID: 9165085681436114572, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12882,10 +12762,6 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1783344169063670525, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1783344169063670525, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 300
       objectReference: {fileID: 0}
@@ -12942,24 +12818,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c8184cdc9b7803a499765ff09375ce3e, type: 3}
-    - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Color.b
-      value: 0.20201136
+      value: 0.93333334
       objectReference: {fileID: 0}
     - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Color.g
-      value: 0.67425764
+      value: 0.056888487
       objectReference: {fileID: 0}
     - target: {fileID: 8350853610821022462, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_Color.r
-      value: 0.9150943
+      value: 0.04705882
       objectReference: {fileID: 0}
     - target: {fileID: 8350853611133671682, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_IsActive
@@ -13129,14 +12997,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseImage
       objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350853611617212154, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 066916b796c826148950032c9f1222b8, type: 3}
     - target: {fileID: 8559524816998420584, guid: cd7ab30c91ec694468dd7a7c94196cb8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0265
