@@ -27,14 +27,14 @@ public class PlayerScript : MonoBehaviour
     float playerZDist;
     float playerXPercent;
     float playerZPercent;
-    bool test;
+    bool testCoord;
     
 
 
     // Start is called before the first frame update
     void Start()
     {
-        test = true;
+        testCoord = false;
         Screen.orientation = ScreenOrientation.Portrait;
     }
 
@@ -48,7 +48,7 @@ public class PlayerScript : MonoBehaviour
         localXDist = topRight.transform.position.x - topLeft.transform.position.x;      // Find the in game x distance between the top 2 markers
         localZDist = bottomLeft.transform.position.z - topLeft.transform.position.z;    // Find the in game z distance between the left 2 markers
 
-        if (test)
+        if (testCoord)
         {
 
             playerXDist = cvc.testlongitude - topLeft.longitude;    // Find the real world longitude distance between the top left marker and the player
@@ -56,7 +56,7 @@ public class PlayerScript : MonoBehaviour
 
         }
 
-        else if (!test)
+        else if (!testCoord)
         {
             playerXDist = cvc.longitude - topLeft.longitude;    // Find the real world longitude distance between the top left marker and the player
             playerZDist = cvc.latitude - topLeft.latitude;      // Find the real world latitude distance between the top left marker and the player
@@ -77,7 +77,7 @@ public class PlayerScript : MonoBehaviour
 
     public void SwitchMovemntType()
     {
-        if (test) { test = false; }
-        else if (!test) { test = true; }
+        if (testCoord) { testCoord = false; }
+        else if (!testCoord) { testCoord = true; }
     }
 }

@@ -104,13 +104,13 @@ public class Monuments : MonoBehaviour
                     }
 
 
-                    if (firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
+                    if (hit.collider.gameObject.GetComponent<Monuments>().firstInteract)      //if its the players first time give them points and set first time to false so they can still interact with monument with getting points
                     {
                         
                         miniGame = hit.collider.gameObject.GetComponent<Monuments>().miniGame;
                         miniGameManager.gameObject.GetComponent<Minigame>().SetGame(miniGame);
                         miniGame.SetActive(true);
-                        firstInteract = false;
+                        hit.collider.gameObject.GetComponent<Monuments>().interacted();
                     }
                 //}
             }
@@ -164,6 +164,12 @@ public class Monuments : MonoBehaviour
         }
 
         
+    }
+
+    public void interacted()
+    {
+        firstInteract = false;
+
     }
 }
 
